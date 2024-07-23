@@ -1,0 +1,1124 @@
+ ****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: c:\users\mohammad\desktop\400405019\400405019.sp                  
+  lic:  
+  lic: FLEXlm: v8.5b 
+  lic: USER:   mohammad             HOSTNAME: mohammad-PC 
+  lic: HOSTID: 000000000000         PID:      3056 
+  lic: Using FLEXlm license file: 
+  lic: 27000@elena 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+  lic: NODE LOCKED license on hostid 000000000000 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_D-2010.03-SP1\meta.cfg
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *cmos----sepehrbazmi------------------------------------------------------------
+
+  ******  circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 xpc.                            pc                 1.00 
+        2 xalu.                           alu                1.00 
+        3 xim.                            im                 1.00 
+        4 xpc.xflipflop0.                 dflipflop          1.00 
+        5 xpc.xflipflop1.                 dflipflop          1.00 
+        6 xpc.xflipflop2.                 dflipflop          1.00 
+        7 xpc.xflipflop3.                 dflipflop          1.00 
+        8 xalu.xfa1.                      fa                 1.00 
+        9 xalu.xfa2.                      fa                 1.00 
+       10 xalu.xfa3.                      fa                 1.00 
+       11 xalu.xfa4.                      fa                 1.00 
+       12 xim.xdec416.                    dec416             1.00 
+       13 xim.xbuffer1.                   buffer             1.00 
+       14 xim.xbuffer2.                   buffer             1.00 
+       15 xim.xbuffer3.                   buffer             1.00 
+       16 xim.xbuffer4.                   buffer             1.00 
+       17 xim.xbuffer5.                   buffer             1.00 
+       18 xim.xbuffer6.                   buffer             1.00 
+       19 xim.xbuffer7.                   buffer             1.00 
+       20 xim.xbuffer8.                   buffer             1.00 
+       21 xim.xbuffer9.                   buffer             1.00 
+       22 xim.xbuffer10.                  buffer             1.00 
+       23 xim.xbuffer11.                  buffer             1.00 
+       24 xim.xbuffer12.                  buffer             1.00 
+       25 xim.xbuffer13.                  buffer             1.00 
+       26 xim.xbuffer14.                  buffer             1.00 
+       27 xim.xbuffer15.                  buffer             1.00 
+       28 xim.xbuffer16.                  buffer             1.00 
+       29 xim.xbuffer17.                  buffer             1.00 
+       30 xim.xbuffer18.                  buffer             1.00 
+       31 xim.xbuffer19.                  buffer             1.00 
+       32 xim.xbuffer20.                  buffer             1.00 
+       33 xim.xbuffer21.                  buffer             1.00 
+       34 xim.xbuffer22.                  buffer             1.00 
+       35 xim.xbuffer23.                  buffer             1.00 
+       36 xim.xbuffer24.                  buffer             1.00 
+       37 xim.xbuffer25.                  buffer             1.00 
+       38 xim.xbuffer26.                  buffer             1.00 
+       39 xim.xbuffer27.                  buffer             1.00 
+       40 xim.xbuffer28.                  buffer             1.00 
+       41 xim.xbuffer29.                  buffer             1.00 
+       42 xim.xbuffer30.                  buffer             1.00 
+       43 xim.xbuffer31.                  buffer             1.00 
+       44 xim.xbuffer32.                  buffer             1.00 
+       45 xpc.xflipflop0.xnot1.           not                1.00 
+       46 xpc.xflipflop0.xnot2.           not                1.00 
+       47 xpc.xflipflop0.xnand1.          nand               1.00 
+       48 xpc.xflipflop0.xnand2.          nand               1.00 
+       49 xpc.xflipflop0.xnand3.          nand               1.00 
+       50 xpc.xflipflop0.xnand4.          nand               1.00 
+       51 xpc.xflipflop0.xnand5.          nand               1.00 
+       52 xpc.xflipflop0.xnand6.          nand               1.00 
+       53 xpc.xflipflop0.xnand7.          nand               1.00 
+       54 xpc.xflipflop0.xnand8.          nand               1.00 
+       55 xpc.xflipflop1.xnot1.           not                1.00 
+       56 xpc.xflipflop1.xnot2.           not                1.00 
+       57 xpc.xflipflop1.xnand1.          nand               1.00 
+       58 xpc.xflipflop1.xnand2.          nand               1.00 
+       59 xpc.xflipflop1.xnand3.          nand               1.00 
+       60 xpc.xflipflop1.xnand4.          nand               1.00 
+       61 xpc.xflipflop1.xnand5.          nand               1.00 
+       62 xpc.xflipflop1.xnand6.          nand               1.00 
+       63 xpc.xflipflop1.xnand7.          nand               1.00 
+       64 xpc.xflipflop1.xnand8.          nand               1.00 
+       65 xpc.xflipflop2.xnot1.           not                1.00 
+       66 xpc.xflipflop2.xnot2.           not                1.00 
+       67 xpc.xflipflop2.xnand1.          nand               1.00 
+       68 xpc.xflipflop2.xnand2.          nand               1.00 
+       69 xpc.xflipflop2.xnand3.          nand               1.00 
+       70 xpc.xflipflop2.xnand4.          nand               1.00 
+       71 xpc.xflipflop2.xnand5.          nand               1.00 
+       72 xpc.xflipflop2.xnand6.          nand               1.00 
+       73 xpc.xflipflop2.xnand7.          nand               1.00 
+       74 xpc.xflipflop2.xnand8.          nand               1.00 
+       75 xpc.xflipflop3.xnot1.           not                1.00 
+       76 xpc.xflipflop3.xnot2.           not                1.00 
+       77 xpc.xflipflop3.xnand1.          nand               1.00 
+       78 xpc.xflipflop3.xnand2.          nand               1.00 
+       79 xpc.xflipflop3.xnand3.          nand               1.00 
+       80 xpc.xflipflop3.xnand4.          nand               1.00 
+       81 xpc.xflipflop3.xnand5.          nand               1.00 
+       82 xpc.xflipflop3.xnand6.          nand               1.00 
+       83 xpc.xflipflop3.xnand7.          nand               1.00 
+       84 xpc.xflipflop3.xnand8.          nand               1.00 
+       85 xalu.xfa1.xha1.                 ha                 1.00 
+       86 xalu.xfa1.xha2.                 ha                 1.00 
+       87 xalu.xfa1.xor.                  or                 1.00 
+       88 xalu.xfa2.xha1.                 ha                 1.00 
+       89 xalu.xfa2.xha2.                 ha                 1.00 
+       90 xalu.xfa2.xor.                  or                 1.00 
+       91 xalu.xfa3.xha1.                 ha                 1.00 
+       92 xalu.xfa3.xha2.                 ha                 1.00 
+       93 xalu.xfa3.xor.                  or                 1.00 
+       94 xalu.xfa4.xha1.                 ha                 1.00 
+       95 xalu.xfa4.xha2.                 ha                 1.00 
+       96 xalu.xfa4.xor.                  or                 1.00 
+       97 xim.xdec416.xnot1.              not                1.00 
+       98 xim.xdec416.xnot2.              not                1.00 
+       99 xim.xdec416.xnot3.              not                1.00 
+      100 xim.xdec416.xnot4.              not                1.00 
+      101 xim.xdec416.xand1.              and4               1.00 
+      102 xim.xdec416.xand2.              and4               1.00 
+      103 xim.xdec416.xand3.              and4               1.00 
+      104 xim.xdec416.xand4.              and4               1.00 
+      105 xim.xdec416.xand5.              and4               1.00 
+      106 xim.xdec416.xand6.              and4               1.00 
+      107 xim.xdec416.xand7.              and4               1.00 
+      108 xim.xdec416.xand8.              and4               1.00 
+      109 xim.xdec416.xand9.              and4               1.00 
+      110 xim.xdec416.xand10.             and4               1.00 
+      111 xim.xdec416.xand11.             and4               1.00 
+      112 xim.xdec416.xand12.             and4               1.00 
+      113 xim.xdec416.xand13.             and4               1.00 
+      114 xim.xdec416.xand14.             and4               1.00 
+      115 xim.xdec416.xand15.             and4               1.00 
+      116 xim.xdec416.xand16.             and4               1.00 
+      117 xim.xbuffer1.xnot1.             not                1.00 
+      118 xim.xbuffer1.xnot2.             not                1.00 
+      119 xim.xbuffer2.xnot1.             not                1.00 
+      120 xim.xbuffer2.xnot2.             not                1.00 
+      121 xim.xbuffer3.xnot1.             not                1.00 
+      122 xim.xbuffer3.xnot2.             not                1.00 
+      123 xim.xbuffer4.xnot1.             not                1.00 
+      124 xim.xbuffer4.xnot2.             not                1.00 
+      125 xim.xbuffer5.xnot1.             not                1.00 
+      126 xim.xbuffer5.xnot2.             not                1.00 
+      127 xim.xbuffer6.xnot1.             not                1.00 
+      128 xim.xbuffer6.xnot2.             not                1.00 
+      129 xim.xbuffer7.xnot1.             not                1.00 
+      130 xim.xbuffer7.xnot2.             not                1.00 
+      131 xim.xbuffer8.xnot1.             not                1.00 
+      132 xim.xbuffer8.xnot2.             not                1.00 
+      133 xim.xbuffer9.xnot1.             not                1.00 
+      134 xim.xbuffer9.xnot2.             not                1.00 
+      135 xim.xbuffer10.xnot1.            not                1.00 
+      136 xim.xbuffer10.xnot2.            not                1.00 
+      137 xim.xbuffer11.xnot1.            not                1.00 
+      138 xim.xbuffer11.xnot2.            not                1.00 
+      139 xim.xbuffer12.xnot1.            not                1.00 
+      140 xim.xbuffer12.xnot2.            not                1.00 
+      141 xim.xbuffer13.xnot1.            not                1.00 
+      142 xim.xbuffer13.xnot2.            not                1.00 
+      143 xim.xbuffer14.xnot1.            not                1.00 
+      144 xim.xbuffer14.xnot2.            not                1.00 
+      145 xim.xbuffer15.xnot1.            not                1.00 
+      146 xim.xbuffer15.xnot2.            not                1.00 
+      147 xim.xbuffer16.xnot1.            not                1.00 
+      148 xim.xbuffer16.xnot2.            not                1.00 
+      149 xim.xbuffer17.xnot1.            not                1.00 
+      150 xim.xbuffer17.xnot2.            not                1.00 
+      151 xim.xbuffer18.xnot1.            not                1.00 
+      152 xim.xbuffer18.xnot2.            not                1.00 
+      153 xim.xbuffer19.xnot1.            not                1.00 
+      154 xim.xbuffer19.xnot2.            not                1.00 
+      155 xim.xbuffer20.xnot1.            not                1.00 
+      156 xim.xbuffer20.xnot2.            not                1.00 
+      157 xim.xbuffer21.xnot1.            not                1.00 
+      158 xim.xbuffer21.xnot2.            not                1.00 
+      159 xim.xbuffer22.xnot1.            not                1.00 
+      160 xim.xbuffer22.xnot2.            not                1.00 
+      161 xim.xbuffer23.xnot1.            not                1.00 
+      162 xim.xbuffer23.xnot2.            not                1.00 
+      163 xim.xbuffer24.xnot1.            not                1.00 
+      164 xim.xbuffer24.xnot2.            not                1.00 
+      165 xim.xbuffer25.xnot1.            not                1.00 
+      166 xim.xbuffer25.xnot2.            not                1.00 
+      167 xim.xbuffer26.xnot1.            not                1.00 
+      168 xim.xbuffer26.xnot2.            not                1.00 
+      169 xim.xbuffer27.xnot1.            not                1.00 
+      170 xim.xbuffer27.xnot2.            not                1.00 
+      171 xim.xbuffer28.xnot1.            not                1.00 
+      172 xim.xbuffer28.xnot2.            not                1.00 
+      173 xim.xbuffer29.xnot1.            not                1.00 
+      174 xim.xbuffer29.xnot2.            not                1.00 
+      175 xim.xbuffer30.xnot1.            not                1.00 
+      176 xim.xbuffer30.xnot2.            not                1.00 
+      177 xim.xbuffer31.xnot1.            not                1.00 
+      178 xim.xbuffer31.xnot2.            not                1.00 
+      179 xim.xbuffer32.xnot1.            not                1.00 
+      180 xim.xbuffer32.xnot2.            not                1.00 
+      181 xalu.xfa1.xha1.xxor.            xor                1.00 
+      182 xalu.xfa1.xha1.xand.            and                1.00 
+      183 xalu.xfa1.xha2.xxor.            xor                1.00 
+      184 xalu.xfa1.xha2.xand.            and                1.00 
+      185 xalu.xfa1.xor.xnor.             nor                1.00 
+      186 xalu.xfa1.xor.xnot.             not                1.00 
+      187 xalu.xfa2.xha1.xxor.            xor                1.00 
+      188 xalu.xfa2.xha1.xand.            and                1.00 
+      189 xalu.xfa2.xha2.xxor.            xor                1.00 
+      190 xalu.xfa2.xha2.xand.            and                1.00 
+      191 xalu.xfa2.xor.xnor.             nor                1.00 
+      192 xalu.xfa2.xor.xnot.             not                1.00 
+      193 xalu.xfa3.xha1.xxor.            xor                1.00 
+      194 xalu.xfa3.xha1.xand.            and                1.00 
+      195 xalu.xfa3.xha2.xxor.            xor                1.00 
+      196 xalu.xfa3.xha2.xand.            and                1.00 
+      197 xalu.xfa3.xor.xnor.             nor                1.00 
+      198 xalu.xfa3.xor.xnot.             not                1.00 
+      199 xalu.xfa4.xha1.xxor.            xor                1.00 
+      200 xalu.xfa4.xha1.xand.            and                1.00 
+      201 xalu.xfa4.xha2.xxor.            xor                1.00 
+      202 xalu.xfa4.xha2.xand.            and                1.00 
+      203 xalu.xfa4.xor.xnor.             nor                1.00 
+      204 xalu.xfa4.xor.xnot.             not                1.00 
+      205 xim.xdec416.xand1.xnot.         not                1.00 
+      206 xim.xdec416.xand2.xnot.         not                1.00 
+      207 xim.xdec416.xand3.xnot.         not                1.00 
+      208 xim.xdec416.xand4.xnot.         not                1.00 
+      209 xim.xdec416.xand5.xnot.         not                1.00 
+      210 xim.xdec416.xand6.xnot.         not                1.00 
+      211 xim.xdec416.xand7.xnot.         not                1.00 
+      212 xim.xdec416.xand8.xnot.         not                1.00 
+      213 xim.xdec416.xand9.xnot.         not                1.00 
+      214 xim.xdec416.xand10.xnot.        not                1.00 
+      215 xim.xdec416.xand11.xnot.        not                1.00 
+      216 xim.xdec416.xand12.xnot.        not                1.00 
+      217 xim.xdec416.xand13.xnot.        not                1.00 
+      218 xim.xdec416.xand14.xnot.        not                1.00 
+      219 xim.xdec416.xand15.xnot.        not                1.00 
+      220 xim.xdec416.xand16.xnot.        not                1.00 
+      221 xalu.xfa1.xha1.xxor.xnot1.      not                1.00 
+      222 xalu.xfa1.xha1.xxor.xnot2.      not                1.00 
+      223 xalu.xfa1.xha1.xxor.xand1.      and                1.00 
+      224 xalu.xfa1.xha1.xxor.xand2.      and                1.00 
+      225 xalu.xfa1.xha1.xxor.xor.        or                 1.00 
+      226 xalu.xfa1.xha1.xand.xnand.      nand               1.00 
+      227 xalu.xfa1.xha1.xand.xnot.       not                1.00 
+      228 xalu.xfa1.xha2.xxor.xnot1.      not                1.00 
+      229 xalu.xfa1.xha2.xxor.xnot2.      not                1.00 
+      230 xalu.xfa1.xha2.xxor.xand1.      and                1.00 
+      231 xalu.xfa1.xha2.xxor.xand2.      and                1.00 
+      232 xalu.xfa1.xha2.xxor.xor.        or                 1.00 
+      233 xalu.xfa1.xha2.xand.xnand.      nand               1.00 
+      234 xalu.xfa1.xha2.xand.xnot.       not                1.00 
+      235 xalu.xfa2.xha1.xxor.xnot1.      not                1.00 
+      236 xalu.xfa2.xha1.xxor.xnot2.      not                1.00 
+      237 xalu.xfa2.xha1.xxor.xand1.      and                1.00 
+      238 xalu.xfa2.xha1.xxor.xand2.      and                1.00 
+      239 xalu.xfa2.xha1.xxor.xor.        or                 1.00 
+      240 xalu.xfa2.xha1.xand.xnand.      nand               1.00 
+      241 xalu.xfa2.xha1.xand.xnot.       not                1.00 
+      242 xalu.xfa2.xha2.xxor.xnot1.      not                1.00 
+      243 xalu.xfa2.xha2.xxor.xnot2.      not                1.00 
+      244 xalu.xfa2.xha2.xxor.xand1.      and                1.00 
+      245 xalu.xfa2.xha2.xxor.xand2.      and                1.00 
+      246 xalu.xfa2.xha2.xxor.xor.        or                 1.00 
+      247 xalu.xfa2.xha2.xand.xnand.      nand               1.00 
+      248 xalu.xfa2.xha2.xand.xnot.       not                1.00 
+      249 xalu.xfa3.xha1.xxor.xnot1.      not                1.00 
+      250 xalu.xfa3.xha1.xxor.xnot2.      not                1.00 
+      251 xalu.xfa3.xha1.xxor.xand1.      and                1.00 
+      252 xalu.xfa3.xha1.xxor.xand2.      and                1.00 
+      253 xalu.xfa3.xha1.xxor.xor.        or                 1.00 
+      254 xalu.xfa3.xha1.xand.xnand.      nand               1.00 
+      255 xalu.xfa3.xha1.xand.xnot.       not                1.00 
+      256 xalu.xfa3.xha2.xxor.xnot1.      not                1.00 
+      257 xalu.xfa3.xha2.xxor.xnot2.      not                1.00 
+      258 xalu.xfa3.xha2.xxor.xand1.      and                1.00 
+      259 xalu.xfa3.xha2.xxor.xand2.      and                1.00 
+      260 xalu.xfa3.xha2.xxor.xor.        or                 1.00 
+      261 xalu.xfa3.xha2.xand.xnand.      nand               1.00 
+      262 xalu.xfa3.xha2.xand.xnot.       not                1.00 
+      263 xalu.xfa4.xha1.xxor.xnot1.      not                1.00 
+      264 xalu.xfa4.xha1.xxor.xnot2.      not                1.00 
+      265 xalu.xfa4.xha1.xxor.xand1.      and                1.00 
+      266 xalu.xfa4.xha1.xxor.xand2.      and                1.00 
+      267 xalu.xfa4.xha1.xxor.xor.        or                 1.00 
+      268 xalu.xfa4.xha1.xand.xnand.      nand               1.00 
+      269 xalu.xfa4.xha1.xand.xnot.       not                1.00 
+      270 xalu.xfa4.xha2.xxor.xnot1.      not                1.00 
+      271 xalu.xfa4.xha2.xxor.xnot2.      not                1.00 
+      272 xalu.xfa4.xha2.xxor.xand1.      and                1.00 
+      273 xalu.xfa4.xha2.xxor.xand2.      and                1.00 
+      274 xalu.xfa4.xha2.xxor.xor.        or                 1.00 
+      275 xalu.xfa4.xha2.xand.xnand.      nand               1.00 
+      276 xalu.xfa4.xha2.xand.xnot.       not                1.00 
+      277 xalu.xfa1.xha1.xxor.xand1.xnand.
+                                            nand               1.00 
+      278 xalu.xfa1.xha1.xxor.xand1.xnot. not                1.00 
+      279 xalu.xfa1.xha1.xxor.xand2.xnand.
+                                            nand               1.00 
+      280 xalu.xfa1.xha1.xxor.xand2.xnot. not                1.00 
+      281 xalu.xfa1.xha1.xxor.xor.xnor.   nor                1.00 
+      282 xalu.xfa1.xha1.xxor.xor.xnot.   not                1.00 
+      283 xalu.xfa1.xha2.xxor.xand1.xnand.
+                                            nand               1.00 
+      284 xalu.xfa1.xha2.xxor.xand1.xnot. not                1.00 
+      285 xalu.xfa1.xha2.xxor.xand2.xnand.
+                                            nand               1.00 
+      286 xalu.xfa1.xha2.xxor.xand2.xnot. not                1.00 
+      287 xalu.xfa1.xha2.xxor.xor.xnor.   nor                1.00 
+      288 xalu.xfa1.xha2.xxor.xor.xnot.   not                1.00 
+      289 xalu.xfa2.xha1.xxor.xand1.xnand.
+                                            nand               1.00 
+      290 xalu.xfa2.xha1.xxor.xand1.xnot. not                1.00 
+      291 xalu.xfa2.xha1.xxor.xand2.xnand.
+                                            nand               1.00 
+      292 xalu.xfa2.xha1.xxor.xand2.xnot. not                1.00 
+      293 xalu.xfa2.xha1.xxor.xor.xnor.   nor                1.00 
+      294 xalu.xfa2.xha1.xxor.xor.xnot.   not                1.00 
+      295 xalu.xfa2.xha2.xxor.xand1.xnand.
+                                            nand               1.00 
+      296 xalu.xfa2.xha2.xxor.xand1.xnot. not                1.00 
+      297 xalu.xfa2.xha2.xxor.xand2.xnand.
+                                            nand               1.00 
+      298 xalu.xfa2.xha2.xxor.xand2.xnot. not                1.00 
+      299 xalu.xfa2.xha2.xxor.xor.xnor.   nor                1.00 
+      300 xalu.xfa2.xha2.xxor.xor.xnot.   not                1.00 
+      301 xalu.xfa3.xha1.xxor.xand1.xnand.
+                                            nand               1.00 
+      302 xalu.xfa3.xha1.xxor.xand1.xnot. not                1.00 
+      303 xalu.xfa3.xha1.xxor.xand2.xnand.
+                                            nand               1.00 
+      304 xalu.xfa3.xha1.xxor.xand2.xnot. not                1.00 
+      305 xalu.xfa3.xha1.xxor.xor.xnor.   nor                1.00 
+      306 xalu.xfa3.xha1.xxor.xor.xnot.   not                1.00 
+      307 xalu.xfa3.xha2.xxor.xand1.xnand.
+                                            nand               1.00 
+      308 xalu.xfa3.xha2.xxor.xand1.xnot. not                1.00 
+      309 xalu.xfa3.xha2.xxor.xand2.xnand.
+                                            nand               1.00 
+      310 xalu.xfa3.xha2.xxor.xand2.xnot. not                1.00 
+      311 xalu.xfa3.xha2.xxor.xor.xnor.   nor                1.00 
+      312 xalu.xfa3.xha2.xxor.xor.xnot.   not                1.00 
+      313 xalu.xfa4.xha1.xxor.xand1.xnand.
+                                            nand               1.00 
+      314 xalu.xfa4.xha1.xxor.xand1.xnot. not                1.00 
+      315 xalu.xfa4.xha1.xxor.xand2.xnand.
+                                            nand               1.00 
+      316 xalu.xfa4.xha1.xxor.xand2.xnot. not                1.00 
+      317 xalu.xfa4.xha1.xxor.xor.xnor.   nor                1.00 
+      318 xalu.xfa4.xha1.xxor.xor.xnot.   not                1.00 
+      319 xalu.xfa4.xha2.xxor.xand1.xnand.
+                                            nand               1.00 
+      320 xalu.xfa4.xha2.xxor.xand1.xnot. not                1.00 
+      321 xalu.xfa4.xha2.xxor.xand2.xnand.
+                                            nand               1.00 
+      322 xalu.xfa4.xha2.xxor.xand2.xnot. not                1.00 
+      323 xalu.xfa4.xha2.xxor.xor.xnor.   nor                1.00 
+      324 xalu.xfa4.xha2.xxor.xor.xnot.   not                1.00 
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *cmos----sepehrbazmi------------------------------------------------------------
+
+  ******  mos   model parameters tnom=  25.000 temp=  25.000 *****
+ 
+Model Name: nmos  
+
+ BSIM4 Model (Level 54)
+
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 7.5e-010 
+    TOXE = 7.5e-010 
+    TOXP = 5e-010 
+    TOXM = 7.5e-010 
+    DTOX = 2.5e-010 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    2.1 
+    XJ = 1e-008 
+    VSAT = 1.821e+005 
+    A0 =      1 
+    AGS =      0 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+004 
+    KETA =   0.04 
+    NSUB = 6e+016 
+    NDEP = 8.7e+018 
+    NSD = 2e+020 
+    NGATE = 1e+023 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-007 
+    K1 =    0.2 
+    KT1 = -0.154 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =      0 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 = 1e-011 
+    DVTP1 =    0.1 
+    W0 = 2.5e-006 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 =      0 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =    0.5 
+    DSUB =  0.078 
+    VTH0 = 0.3558 
+    EU =   1.67 
+    UA = -5e-010 
+    UA1 = 1e-009 
+    UB = 1.7e-018 
+    UB1 = -1e-018 
+    UC =      0 
+    UC1 = -5.6e-011 
+    U0 = 0.0238 
+    UTE =   -1.1 
+    VOFF =  -0.13 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.01 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+006 
+    DELTA =   0.01 
+    RDSW =     80 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     40 
+    RSW =     40 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 =  0.005 
+    ETAB =      0 
+    PCLM =   0.06 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = -0.005 
+    PSCBE1 = 2e+009 
+    PSCBE2 = 1e-007 
+    PVAG = 1e-020 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -1.4e-008 
+    XLREF = -1.4e-008 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+009 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.02001 
+    BIGC = 0.002743 
+    CIGC =  0.002 
+    AIGSD = 0.02001 
+    BIGSD = 0.002743 
+    CIGSD =  0.002 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =    0.1 
+    IJTHSFWD =    0.1 
+    IJTHDREV =    0.1 
+    IJTHSREV =    0.1 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB = -1.058 
+    GBMIN = 1e-010 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 7.5e-013 
+    CGDL = 7.5e-013 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.1e-010 
+    CLC = 1e-007 
+    CLE =    0.6 
+    DWC = 5e-009 
+    DLC = 1.95e-009 
+    DLCIG = 1.95e-009 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =      1 
+    VOFFCV =      0 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =      0 
+    TPB =      0 
+    TCJSW =      0 
+    TPBSW =      0 
+    TCJSWG =      0 
+    TPBSWG =      0 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL = 2e-006 
+    SW = 2e-006 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 9e-011 
+    CGDO = 9e-011 
+    CGBO =      0 
+    XPART =      0 
+    RSH =      5 
+    JSS = 1.2e-006 
+    JSWS = 2.4e-013 
+    JSWGS = 2.4e-013 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0018 
+    CJSWS = 1.2e-010 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS = 2.1e-010 
+    XTIS =      3 
+    JSD = 1.2e-006 
+    JSWD = 2.4e-013 
+    JSWGD = 2.4e-013 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0018 
+    CJSWD = 1.2e-010 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD = 2.1e-010 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 1.95e-009 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = 5e-009 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+041 
+    NOIB = 3.125e+026 
+    NOIC = 8.75e+009 
+    EM = 4.1e+007 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ 
+
+ 
+Model Name: pmos  
+
+ BSIM4 Model (Level 54)
+
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 7.7e-010 
+    TOXE = 7.7e-010 
+    TOXP = 5e-010 
+    TOXM = 7.7e-010 
+    DTOX = 2.7e-010 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    2.1 
+    XJ = 1.008e-008 
+    VSAT = 7.8e+004 
+    A0 =      1 
+    AGS = 1e-020 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+004 
+    KETA = -0.047 
+    NSUB = 6e+016 
+    NDEP = 3.5e+018 
+    NSD = 2e+020 
+    NGATE = 1e+023 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-007 
+    K1 =    0.2 
+    KT1 =  -0.14 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =  -0.01 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 = 1e-011 
+    DVTP1 =   0.05 
+    W0 = 2.5e-006 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 = -0.032 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =    0.6 
+    DSUB =    0.1 
+    VTH0 = -0.2412 
+    EU =      1 
+    UA = -5e-010 
+    UA1 = 1e-009 
+    UB = 1.6e-018 
+    UB1 = -1e-018 
+    UC =      0 
+    UC1 = -5.6e-011 
+    U0 = 0.00306 
+    UTE =   -1.1 
+    VOFF =  -0.13 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.08 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+006 
+    DELTA =   0.01 
+    RDSW =     80 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     40 
+    RSW =     40 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.0042 
+    ETAB =      0 
+    PCLM =    0.1 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = 3.4e-008 
+    PSCBE1 = 2e+009 
+    PSCBE2 = 9.58e-007 
+    PVAG = 1e-020 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -1.4e-008 
+    XLREF = -1.4e-008 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+009 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.01194 
+    BIGC = 0.001222 
+    CIGC = 0.0008 
+    AIGSD = 0.01194 
+    BIGSD = 0.001222 
+    CIGSD = 0.0008 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =    0.1 
+    IJTHSFWD =    0.1 
+    IJTHDREV =    0.1 
+    IJTHSREV =    0.1 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB = -1.058 
+    GBMIN = 1e-012 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 3e-011 
+    CGDL = 3e-011 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.1e-010 
+    CLC = 1e-007 
+    CLE =    0.6 
+    DWC = 5e-009 
+    DLC = 1.95e-009 
+    DLCIG = 1.95e-009 
+    DWJ = 5e-009 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =      1 
+    VOFFCV =      0 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ =      0 
+    TPB =      0 
+    TCJSW =      0 
+    TPBSW =      0 
+    TCJSWG =      0 
+    TPBSWG =      0 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL = 2e-006 
+    SW = 2e-006 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 9e-011 
+    CGDO = 9e-011 
+    CGBO =      0 
+    XPART =      0 
+    RSH =      5 
+    JSS = 2e-007 
+    JSWS = 4e-013 
+    JSWGS = 4e-013 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0015 
+    CJSWS = 9.4e-011 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS = 2e-010 
+    XTIS =      3 
+    JSD = 2e-007 
+    JSWD = 4e-013 
+    JSWGD = 4e-013 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0015 
+    CJSWD = 9.4e-011 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD = 2e-010 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 1.95e-009 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = 5e-009 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+041 
+    NOIB = 3.125e+026 
+    NOIC = 8.75e+009 
+    EM = 4.1e+007 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ 
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=1e-006 l=3.2e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=2e-006 l=3.2e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model nmos with w=4e-006 l=3.2e-008.
+
+ Warning:  Acde = 1 may be too small in BSIM4 model pmos with w=2e-006 l=3.2e-008.
+
+ 
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 79
+ file=c:\users\mohammad\desktop\400405019\400405019.pa0                        
+
+
+ **info** dc convergence failure, 
+ resetting dcon option to 1 and retrying
+
+ no convergence with standard algorithm,  trying damped pseudo-transient
+
+  *** initial damped pseudo transient completed. ***
+  *** final try started ***
+  *** final try succeeded *** 
+
+ **info** This was a difficult operating point.
+             You can speed up your simulation by specifying:
+             .OPTION CONVERGE=1
+
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *cmos----sepehrbazmi------------------------------------------------------------
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+      node    =voltage        node    =voltage        node    =voltage
+
+ +  0:clk     =   1.1000    0:d0      =   1.0994    0:d1      = 997.0855u
+ +  0:d2      = 997.0855u   0:d3      = 997.0855u   0:o0      = 311.8296u
+ +  0:o1      = 311.8296u   0:o10     = 311.8296u   0:o11     = 311.8296u
+ +  0:o12     = 311.8296u   0:o13     = 311.8296u   0:o14     =   1.0996 
+ +  0:o15     =   1.0996    0:o16     = 311.8296u   0:o17     = 311.8296u
+ +  0:o18     = 311.8296u   0:o19     = 311.8296u   0:o2      =   1.0996 
+ +  0:o20     = 311.8296u   0:o21     = 311.8296u   0:o22     = 311.8296u
+ +  0:o23     = 311.8296u   0:o24     = 311.8296u   0:o25     = 311.8296u
+ +  0:o26     = 311.8296u   0:o27     = 311.8296u   0:o28     =   1.0996 
+ +  0:o29     = 311.8296u   0:o3      = 311.8296u   0:o30     = 311.8296u
+ +  0:o31     = 311.8296u   0:o4      = 311.8296u   0:o5      = 311.8296u
+ +  0:o6      = 311.8296u   0:o7      = 311.8296u   0:o8      = 311.8296u
+ +  0:o9      = 311.8296u   0:q0      =   5.8072m   0:q1      =   4.9656m
+ +  0:q2      =   4.7942m   0:q3      =   4.7282m   0:vdd     =   1.1000 
+ +  2:add1    =   1.1000    2:cout1   =   1.2425m   2:cout2   =   1.2425m
+ +  2:cout3   =   1.2425m   2:cout4   = 322.0512u   3:c1      =   2.2080m
+ +  3:c10     =   2.2076m   3:c11     =   2.2076m   3:c12     =   2.2077m
+ +  3:c13     =   2.2076m   3:c14     =   2.2078m   3:c15     =   2.2076m
+ +  3:c16     =   2.2076m   3:c17     = 910.4767m   3:c18     = 857.5882m
+ +  3:c19     =   2.2080m   3:c2      =   2.2080m   3:c20     =   2.2073m
+ +  3:c21     =   2.2073m   3:c22     =   2.2076m   3:c23     =   2.2076m
+ +  3:c24     =   2.2076m   3:c25     =   2.2073m   3:c26     =   2.2073m
+ +  3:c27     =   2.2073m   3:c28     =   2.2074m   3:c29     =   2.2074m
+ +  3:c3      =   2.2078m   3:c30     = 910.4718m   3:c31     =   2.2073m
+ +  3:c32     =   2.2074m   3:c4      = 891.0786m   3:c5      =   2.2077m
+ +  3:c6      =   2.2080m   3:c7      =   2.2077m   3:c8      =   2.2077m
+ +  3:c9      =   2.2076m   3:r1      =   1.0938    3:r10     = 310.8158u
+ +  3:r11     = 310.5638u   3:r12     = 310.3964u   3:r13     = 310.5732u
+ +  3:r14     = 310.3915u   3:r15     = 310.2380u   3:r16     = 310.1892u
+ +  3:r2      = 367.8526u   3:r3      = 328.7647u   3:r4      = 383.3690u
+ +  3:r5      = 365.8765u   3:r6      = 364.0448u   3:r7      = 310.6167u
+ +  3:r8      = 382.9165u   3:r9      = 347.7935u   4:nand1   =   1.0992 
+ +  4:nand2   =   1.0996    4:nand5   =   1.0990    4:nand6   =   1.0339m
+ +  4:notclk  = 984.4780u   4:notd    = 595.1581u   4:q1      =   1.4629m
+ +  4:qnot    =   1.0995    4:qnot1   =   1.0985    5:nand1   =   1.0995 
+ +  5:nand2   =   1.0991    5:nand5   =   1.0990    5:nand6   =   1.0339m
+ +  5:notclk  = 947.2434u   5:notd    =   1.0992    5:q1      =   1.4613m
+ +  5:qnot    =   1.0995    5:qnot1   =   1.0985    6:nand1   =   1.0995 
+ +  6:nand2   =   1.0991    6:nand5   =   1.0990    6:nand6   =   1.0339m
+ +  6:notclk  = 947.2434u   6:notd    =   1.0992    6:q1      =   1.4613m
+ +  6:qnot    =   1.0995    6:qnot1   =   1.0985    7:nand1   =   1.0995 
+ +  7:nand2   =   1.0991    7:nand5   =   1.0990    7:nand6   =   1.0339m
+ +  7:notclk  = 947.2434u   7:notd    =   1.0992    7:q1      =   1.4613m
+ +  7:qnot    =   1.0995    7:qnot1   =   1.0985    8:c1      = 666.3735u
+ +  8:c2      = 667.6276u   8:s1      =   1.0989    9:c1      = 664.1251u
+ +  9:c2      = 666.3598u   9:s1      =   1.3512m  10:c1      = 664.1255u
+ + 10:c2      = 666.3598u  10:s1      =   1.3512m  11:c1      = 664.1252u
+ + 11:c2      = 666.3597u  11:s1      =   1.3512m  12:not1    =   1.0987 
+ + 12:not2    =   1.0977   12:not3    =   1.0960   12:not4    =   1.0929 
+ + 13:notin   =   1.0994   14:notin   =   1.0994   15:notin   =   1.0994 
+ + 16:notin   =  18.5630m  17:notin   =   1.0994   18:notin   =   1.0994 
+ + 19:notin   =   1.0994   20:notin   =   1.0994   21:notin   =   1.0994 
+ + 22:notin   =   1.0994   23:notin   =   1.0994   24:notin   =   1.0994 
+ + 25:notin   =   1.0994   26:notin   =   1.0994   27:notin   =   1.0994 
+ + 28:notin   =   1.0994   29:notin   =  13.8772m  30:notin   =  28.8614m
+ + 31:notin   =   1.0994   32:notin   =   1.0994   33:notin   =   1.0994 
+ + 34:notin   =   1.0994   35:notin   =   1.0994   36:notin   =   1.0994 
+ + 37:notin   =   1.0994   38:notin   =   1.0994   39:notin   =   1.0994 
+ + 40:notin   =   1.0994   41:notin   =   1.0994   42:notin   =  13.8783m
+ + 43:notin   =   1.0994   44:notin   =   1.0994   47:sadb    = 899.7354m
+ + 48:sadb    =  96.4910m  49:sadb    = 795.5986u  50:sadb    = 136.7949u
+ + 51:sadb    = 137.0137u  52:sadb    = 581.2308u  53:sadb    =   2.9667m
+ + 54:sadb    =  99.6374m  57:sadb    =  96.2920m  58:sadb    = 135.8817u
+ + 59:sadb    = 794.8321u  60:sadb    = 136.6804u  61:sadb    = 137.0104u
+ + 62:sadb    = 581.2294u  63:sadb    =   2.5462m  64:sadb    =  99.0429m
+ + 67:sadb    =  96.2920m  68:sadb    = 135.8817u  69:sadb    = 794.8320u
+ + 70:sadb    = 136.6804u  71:sadb    = 137.0104u  72:sadb    = 581.2292u
+ + 73:sadb    =   2.4606m  74:sadb    =  98.9218m  77:sadb    =  96.2920m
+ + 78:sadb    = 135.8817u  79:sadb    = 794.8320u  80:sadb    = 136.6804u
+ + 81:sadb    = 137.0104u  82:sadb    = 581.2291u  83:sadb    =   2.4276m
+ + 84:sadb    =  98.8752m  87:norab   =   1.0974   90:norab   =   1.0974 
+ + 93:norab   =   1.0974   96:norab   =   1.0974  101:out1    =   2.3831m
+ +101:smn1    =   1.9783m 101:smn2    =   1.4459m 101:smn3    = 786.1937u
+ +102:out1    =   1.0988  102:smn1    = 811.9139u 102:smn2    = 668.4514u
+ +102:smn3    = 397.5140u 103:out1    =   1.0992  103:smn1    = 897.6452m
+ +103:smn2    = 336.0145u 103:smn3    = 231.2959u 104:out1    =   1.0996 
+ +104:smn1    =  97.5392m 104:smn2    = 259.1410u 104:smn3    = 192.8584u
+ +105:out1    =   1.0992  105:smn1    = 900.4873m 105:smn2    = 868.9852m
+ +105:smn3    = 100.5126u 106:out1    =   1.0996  106:smn1    = 460.8963m
+ +106:smn2    = 460.8895m 106:smn3    =  72.5972u 107:out1    =   1.0996 
+ +107:smn1    = 925.4474m 107:smn2    =  82.2678m 107:smn3    =  65.4529u
+ +108:out1    =   1.0997  108:smn1    = 114.3287m 108:smn2    =  22.7109m
+ +108:smn3    =  64.2002u 109:out1    =   1.0992  109:smn1    = 902.0722m
+ +109:smn2    = 870.7019m 109:smn3    = 853.6891m 110:out1    =   1.0996 
+ +110:smn1    = 525.4603m 110:smn2    = 525.4584m 110:smn3    = 525.4396m
+ +111:out1    =   1.0996  111:smn1    = 928.7370m 111:smn2    = 459.7373m
+ +111:smn3    = 459.7305m 112:out1    =   1.0997  112:smn1    = 148.3978m
+ +112:smn2    = 459.4097m 112:smn3    = 459.4029m 113:out1    =   1.0996 
+ +113:smn1    = 927.9264m 113:smn2    = 898.6237m 113:smn3    =  79.8984m
+ +114:out1    =   1.0997  114:smn1    = 525.7491m 114:smn2    = 525.7473m
+ +114:smn3    =  49.8974m 115:out1    =   1.0997  115:smn1    = 926.8630m
+ +115:smn2    =  98.9456m 115:smn3    =  21.5843m 116:out1    =   1.0997 
+ +116:smn1    = 121.8559m 116:smn2    =  34.5289m 116:smn3    =  12.8935m
+ +181:nota    =   1.0992  181:notb    = 592.0517u 181:outand1 = 310.5859u
+ +181:outand2 =   1.0992  182:nandab  =   1.0992  183:nota    = 670.9146u
+ +183:notb    =   1.0992  183:outand1 =   1.0992  183:outand2 = 593.6313u
+ +184:nandab  =   1.0994  185:smp1    =   1.0985  187:nota    =   1.0996 
+ +187:notb    =   1.0992  187:outand1 = 666.3501u 187:outand2 = 667.6420u
+ +188:nandab  =   1.0996  189:nota    =   1.0997  189:notb    =   1.0992 
+ +189:outand1 = 666.2560u 189:outand2 = 667.6293u 190:nandab  =   1.0996 
+ +191:smp1    =   1.0985  193:nota    =   1.0996  193:notb    =   1.0992 
+ +193:outand1 = 666.3454u 193:outand2 = 667.6420u 194:nandab  =   1.0996 
+ +195:nota    =   1.0997  195:notb    =   1.0992  195:outand1 = 666.2560u
+ +195:outand2 = 667.6293u 196:nandab  =   1.0996  197:smp1    =   1.0985 
+ +199:nota    =   1.0996  199:notb    =   1.0992  199:outand1 = 666.3436u
+ +199:outand2 = 667.6420u 200:nandab  =   1.0996  201:nota    =   1.0997 
+ +201:notb    =   1.0992  201:outand1 = 666.2560u 201:outand2 = 667.6293u
+ +202:nandab  =   1.0996  203:smp1    =   1.0985  223:nandab  =   1.0996 
+ +224:nandab  =   1.0660m 225:norab   = 302.8029u 226:sadb    = 145.7763u
+ +230:nandab  =   1.0714m 231:nandab  =   1.0996  232:norab   = 346.4052u
+ +233:sadb    = 899.8224m 237:nandab  =   1.0992  238:nandab  =   1.0994 
+ +239:norab   =   1.0974  240:sadb    =  98.9299m 244:nandab  =   1.0992 
+ +245:nandab  =   1.0994  246:norab   =   1.0974  247:sadb    =  97.1015m
+ +251:nandab  =   1.0992  252:nandab  =   1.0994  253:norab   =   1.0974 
+ +254:sadb    =  98.8089m 258:nandab  =   1.0992  259:nandab  =   1.0994 
+ +260:norab   =   1.0974  261:sadb    =  97.1015m 265:nandab  =   1.0992 
+ +266:nandab  =   1.0994  267:norab   =   1.0974  268:sadb    =  98.7623m
+ +272:nandab  =   1.0992  273:nandab  =   1.0994  274:norab   =   1.0974 
+ +275:sadb    =  97.1015m 277:sadb    =  99.9041m 279:sadb    = 597.3405u
+ +281:smp1    = 163.9973m 283:sadb    = 599.9268u 285:sadb    =  96.6214m
+ +287:smp1    =   1.0995  289:sadb    = 143.8379u 291:sadb    = 899.8438m
+ +293:smp1    =   1.0985  295:sadb    = 136.6759u 297:sadb    = 900.4008m
+ +299:smp1    =   1.0985  301:sadb    = 143.4833u 303:sadb    = 899.8441m
+ +305:smp1    =   1.0985  307:sadb    = 136.6759u 309:sadb    = 900.4008m
+ +311:smp1    =   1.0985  313:sadb    = 143.3471u 315:sadb    = 899.8443m
+ +317:smp1    =   1.0985  319:sadb    = 136.6759u 321:sadb    = 900.4008m
+ +323:smp1    =   1.0985 
+
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03-SP1 32-BIT (May 26 2010) winnt ******               
+ ******  
+ *cmos----sepehrbazmi------------------------------------------------------------
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     4
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =    3976 # elements   =     934
+  # resistors   =      32 # capacitors =       0 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =     899 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.72           1         460
+  transient         19.80      900001       24722        7978 rev=        82
+  readin             0.03
+  errchk             0.03
+  setup              0.16
+  output             0.00
+
+
+           total memory used         6613  kbytes
+           total cpu time           20.75 seconds
+           total elapsed time       20.76 seconds
+           job started at     13:31:17 06/09/2013
+           job ended   at     13:31:38 06/09/2013
+
+
+  lic: Release hspice token(s) 
