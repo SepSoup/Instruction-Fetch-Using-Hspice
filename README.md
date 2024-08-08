@@ -5,7 +5,7 @@
 The instruction fetch stage is a critical component of the Patterson processing model, which describes the operation of a CPU's instruction cycle. This README provides a detailed explanation of how the instruction fetch stage works and how it can be simulated using HSPICE, a hardware simulator. It also includes information about global settings and power supplies for a comprehensive understanding.
 This program aims to fetch each the Instructions of the Fibonacci program sequentialy with each clock
 
-<img src="https://github.com/SepSoup/Instruction-Fetch-Using-Hspice/blob/main/Patterson%20Processor%20Fetch/Fibonacci%20Program.jpg" alt="Game Logic" width="500"/>
+<img src="https://github.com/SepSoup/Instruction-Fetch-Using-Hspice/blob/main/Patterson%20Processor%20Fetch/Fibonacci%20Program.jpg" alt="Game Logic" width="5600"/>
 
 
 ## Patterson Processing Model: Instruction Fetch Stage
@@ -15,7 +15,7 @@ The instruction fetch stage is the first step in executing an instruction and in
 ### Key Components
 
 
-<img src="https://github.com/SepSoup/Instruction-Fetch-Using-Hspice/blob/main/Patterson%20Processor%20Fetch/Map.jpg" alt="Game Logic" width="600"/>
+<img src="https://github.com/SepSoup/Instruction-Fetch-Using-Hspice/blob/main/Patterson%20Processor%20Fetch/Map.jpg" alt="map" width="600"/>
 
 
 1. **Program Counter (PC):**
@@ -90,6 +90,14 @@ In an HSPICE simulation, the instruction fetch stage can be modeled as follows:
    - **Clock Pulses:** Each clock pulse triggers instruction fetching based on the PC value.
    - **Instruction Fetch:** Instructions are retrieved and the PC is updated.
    - **Iteration:** The process repeats with each clock cycle, simulating sequential instruction fetching.
+  
+## Visualization with CScope
+
+we can see how this hardware will act in the given sceanario by visualizing it with CScope :
+
+<img src="https://github.com/SepSoup/Instruction-Fetch-Using-Hspice/blob/main/Patterson%20Processor%20Fetch/Output%20Graph.png" alt="Graph" width="600"/>
+
+
 
 ## Summary
 
