@@ -14,6 +14,10 @@ The instruction fetch stage is the first step in executing an instruction and in
 
 ### Key Components
 
+
+<img src="https://github.com/SepSoup/Instruction-Fetch-Using-Hspice/blob/main/Patterson%20Processor%20Fetch/Map.jpg" alt="Game Logic" width="600"/>
+
+
 1. **Program Counter (PC):**
    - **Purpose:** Holds the address of the next instruction to be fetched.
    - **Operation:** Incremented after each fetch to point to the subsequent instruction. Can be modified by branch instructions or control flow changes.
