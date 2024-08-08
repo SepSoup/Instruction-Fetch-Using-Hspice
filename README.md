@@ -69,8 +69,8 @@ In an HSPICE simulation, the instruction fetch stage can be modeled as follows:
 ### Power Supplies
 
 1. **Voltage Sources:**
-   - **VDD:** Provide the supply voltage for the circuit components (typically 1.8V, 3.3V, or according to the specific technology used).
-   - **Ground:** Ensure a stable ground reference for all circuit components.
+   - **VDD:** Provide the supply voltage for the circuit components `(typically 1.8V, 3.3V, or according to the specific technology used)`.
+   - **Ground:** Ensure a stable `ground` reference for all circuit components.
 
 2. **Power Supply Decoupling:**
    - Use decoupling capacitors to filter out noise and stabilize the power supply to sensitive components like the PC and IM.
@@ -78,8 +78,8 @@ In an HSPICE simulation, the instruction fetch stage can be modeled as follows:
 ### Simulation Process
 
 1. **Setup:**
-   - Define the PC and IM as circuit elements.
-   - Use a clock signal to drive timing for instruction fetching.
+   - Define the `PC` and `IM` as circuit elements.
+   - Use a `clock` signal to drive timing for instruction fetching.
 
 2. **Configuration:**
    - Set the global simulation settings, including time, time step, and temperature/process variations.
