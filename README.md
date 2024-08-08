@@ -108,7 +108,7 @@ we can see how this hardware will act in the given sceanario by visualizing it w
 | 7         | 08000003   |
 | 8         | A00400FF   |
 
-
+## Cscope output
 
 <img src="https://github.com/SepSoup/Instruction-Fetch-Using-Hspice/blob/main/Patterson%20Processor%20Fetch/Output%20Graph.png" alt="Graph" width="600"/>
 
