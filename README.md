@@ -5,7 +5,7 @@
 The instruction fetch stage is a critical component of the Patterson processing model, which describes the operation of a CPU's instruction cycle. This README provides a detailed explanation of how the instruction fetch stage works and how it can be simulated using HSPICE, a hardware simulator. It also includes information about global settings and power supplies for a comprehensive understanding.
 This program aims to fetch each the Instructions of the Fibonacci program sequentialy with each clock
 
-<img src="https://github.com/SepSoup/Patterson-Processor-Fetch/Fibonacci-Program.jpg" alt="Game Logic" width="500"/>
+<img src="https://github.com/SepSoup/Instruction-Fetch-Using-Hspice/blob/main/Patterson%20Processor%20Fetch/Fibonacci%20Program.jpg" alt="Game Logic" width="500"/>
 
 
 ## Patterson Processing Model: Instruction Fetch Stage
